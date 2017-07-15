@@ -1,0 +1,7 @@
+<h2>Hello, <%= @user.name %>!</h2>
+<div><a href="/users">Back to Users list</a></div>
+<ul>
+<% @user.tweets.each do |tweet| %>
+  <li><%= tweet.content %>!</li>
+<% end %>
+</ul>
