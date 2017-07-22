@@ -1,6 +1,7 @@
-<h2>Users</h2>
+<h2>Users</h2><br>
+<div><a href="/users/new">Add new user</a></div>
 <ul>
 <% @users.each do |user| %>
-  <li><a href="/users/<%= user.id %>">Hi, <%= user.salutation %>!</a></li>
+  <li><a href="/users/<%= user.id %>">Hi, <%= user.name %>!</a></li>
 <% end %>
 </ul>
